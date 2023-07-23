@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+.friend-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itemFL{
+  width: 400px;
+  background-color: rgb(207, 207, 207);
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow: 5px 5px 0 0 #000000;
+}
+
+.nameFL{
+  font-family: "Rooto Slab";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.statusFLGreen{
+  width: 18px;
+  height: 18px;
+  margin-left: 22px;
+  border-radius: 20px;
+  background-color: green;
+}
+
+.statusFLRed {
+  width: 18px;
+  height: 18px;
+  margin-left: 22px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.avatarFL{
+
+}
