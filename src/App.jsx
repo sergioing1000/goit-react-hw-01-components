@@ -8,10 +8,10 @@ import statsData from './assets/data.json';
 import friendsData from './assets/friends.json';
 import transactionData from './assets/transactions.json';
 
-import Profile from './components/Profile';
-import Statistics from './components/Statistics.jsx';
-import FriendList from './components/FriendList.jsx';
-import TransactionHistory from './components/TransactionHistory.jsx';
+import FriendList from './components/FriendList/FriendList.jsx';
+import Profile from './components/Profile/Profile';
+import Statistics from './components/Statistics/Statistics.jsx';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx';
 
 
 function App() {

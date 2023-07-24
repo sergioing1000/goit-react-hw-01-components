@@ -1,10 +1,10 @@
-
-import '../CSS/stats.css'; 
+import propTypes from "prop-types"
+import '../../CSS/stats.css'; 
 
 function Statistic(props) {
 
   const { statsData } = props;
-
+  
   let docx = 0;
   let pdf = 0;
   let mp3 = 0;
@@ -58,5 +58,15 @@ function Statistic(props) {
     
   );
 }
+
+Statistic.propTypes = {
+  statsData: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.string.isRequired,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Statistic;

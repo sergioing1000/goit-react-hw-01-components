@@ -1,5 +1,5 @@
-
-import '../CSS/frinensList.css'; 
+import propTypes from "prop-types"
+import '../../CSS/frinensList.css'; 
 
 function FriendList(props) {
 
@@ -20,7 +20,16 @@ function FriendList(props) {
   );
 }
 
+FriendList.propTypes = {
+  friendsData: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.number.isRequired,
+      isOnline: propTypes.bool.isRequired,
+      avatar: propTypes.string.isRequired,
+      name: propTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+
 export default FriendList;
-
-
-
